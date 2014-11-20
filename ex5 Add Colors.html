@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Colors</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/ex5.js"></script>
+
+</head>
+<body ng-app="fapp">
+
+<div ng-controller="ctrl5">
+
+{{colors}}<br><br>
+<input type="text" ng-model = "color5"/>
+<button ng-click="add()">Add</button>
+
+		<ul>
+			<li ng-repeat="item in colors track by $index" style="color: {{item}}">{{item}}
+				<button ng-click="colors.splice($index,1)">Delete</button>
+			</li>
+		</ul>
+	</div>
+
+
+
+</body>
+</html>

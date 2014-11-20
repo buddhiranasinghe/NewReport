@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ANGULAR</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+
+<script type="text/javascript" src="js/ex1.js"></script>
+
+
+</head>
+<body ng-app="fapp">
+
+	<button>bad</button>
+
+	<div ng-app="">
+		<div ng-controller="FirstCtrl">
+
+			<h1>{{data.message + "World"}}</h1>
+
+		</div>
+
+	</div>
+
+
+
+	<div ng-controller="first">
+		<button ng-click="hey()">Hello</button>
+		{{hey}}
+	</div>
+
+</body>
+</html>

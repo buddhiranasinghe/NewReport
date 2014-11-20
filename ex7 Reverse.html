@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Example 7 Reverse</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/ex7.js"></script>
+</head>
+<body ng-app="fapp">
+
+<h3>PRODUCTS</h3>
+<hr>
+
+<div ng-controller="ctrl7">
+	<ul style = "list-style:none;">
+			<li ng-repeat="item in milk">
+			{{item.name|reverse}} -
+			{{item.price|currency}} -
+			{{item.qty}}
+			</li>
+	</ul>
+</div>
+
+</body>
+</html>

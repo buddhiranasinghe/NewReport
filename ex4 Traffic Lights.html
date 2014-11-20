@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Example 4 Traffic Lights</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/ex4.js"></script>
+</head>
+
+<body ng-app="fapp">
+
+	<div ng-controller="ctrl4">
+		<img ng-src={{lights}}>
+		<button ng-click="red()">RED</button>
+		<button ng-click="yellow()">YELLOW</button>
+		<button ng-click="green()">GREEN</button>
+	</div>
+
+
+<div ng-controller="ctrlA">
+<div id = "red" style = "width: 100px; height: 100px; border: 1px solid black; border-radius:200px; background-color:red "></div>
+<br>
+<div id = "yellow" style = "width: 100px; height: 100px; border: 1px solid black; border-radius:200px; background-color:yellow "></div>
+<br>
+<div id = "green" style = "width: 100px; height: 100px; border: 1px solid black; border-radius:200px; background-color:green "></div>
+<br>
+<button ng-click="x">RED</button>
+<button ng-click="y">YELLOW</button>
+<button ng-click="z">GREEN</button>
+</div>
+
+
+
+</body>
+</html>

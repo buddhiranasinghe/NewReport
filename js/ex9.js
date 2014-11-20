@@ -1,0 +1,36 @@
+var myApp = angular.module('fapp', []);
+
+myApp.controller('ctrl', function($scope){
+
+	$scope.persons = [
+	                  {
+	                      "First_Name": "John",
+	                      "Last_Name": "Wonka",
+	                      "Zip_Code": 91004,
+	                      "Age": 34
+	                  },
+	                  {
+	                      "First_Name": "Kevin",
+	                      "Last_Name": "James",
+	                      "Zip_Code": 91004,
+	                      "Age": 23
+	                  },
+	                  {
+	                      "First_Name": "Mike",
+	                      "Last_Name": "Jerome",
+	                      "Zip_Code": 91004,
+	                      "Age": 56
+	                  }
+	              ];
+	});
+
+
+/*$scope.saveChanges = function(){
+	console.log($scope.persons);
+	//return function (input)
+};*/
+
+
+
+
+

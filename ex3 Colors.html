@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Example 3 Colors</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/ex3.js"></script>
+
+</head>
+
+<body ng-app="fapp">
+
+	<div ng-controller="ctrl3">
+		<ul>
+			<li ng-repeat="item in colors" style="color: {{item}}">{{item}}
+				<button ng-click="colors.splice($index,1)">Delete</button>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

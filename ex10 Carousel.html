@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Example 10 Carousel</title>
+<!-- <script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<!-- <script src="js/jquery-1.11.1.js"></script> -->
+<script type="text/javascript" src="js/ex10.js"></script>
+
+</head>
+<body ng-app="fapp">
+
+<h3>Carousel</h3>
+<hr>
+
+<div ng-controller="ctrl">
+	<button ng-click='prev()'>Previous</button>
+	<button ng-click='next()'>Next</button>
+	<img ng-src={{images[pic]}} style="width:180px; height:140px"></img>
+ </div>
+
+{{8+8}}
+</body>
+</html>

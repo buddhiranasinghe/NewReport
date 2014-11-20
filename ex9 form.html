@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Example 9 Form</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/ex9.js"></script>
+
+</head>
+<body ng-app="fapp">
+
+<h3>Form</h3>
+<hr>
+<body ng-controller='ctrl'>
+<ul style = 'list-style:none;'>
+<li ng-repeat="person in persons">
+<ul ng-repeat = "(key, value) in person">
+{{key}}
+<input type='text' ng-model='person[key]'>
+</ul>
+<br>
+</li>
+</ul>
+<button ng-click='saveChanges'>Update</button>
+{{persons}}
+</body>
+
+
+</body>
+</html>
